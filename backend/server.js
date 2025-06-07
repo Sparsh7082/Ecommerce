@@ -1,4 +1,7 @@
 const app = require('./app')
+const connectDataBase = require('./db/dataBase')
+
+connectDataBase()
 
 const server = app.listen((process.env.PORT),() => {
     console.log(`server running on ${process.env.PORT}`);
